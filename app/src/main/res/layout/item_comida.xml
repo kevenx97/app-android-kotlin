@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="64sp"
+    android:paddingHorizontal="16sp">
+
+        <ImageView
+            android:id="@+id/item_comida_imagem"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="5sp"
+            android:background="@drawable/circle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="5sp"
+            app:srcCompat="@android:drawable/ic_menu_report_image" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/item_comida_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16sp"
+        android:textColor="@color/colorTextTitle"
+        android:textSize="16dp"
+        app:fontFamily="@font/roboto"
+        app:layout_constraintBottom_toTopOf="@+id/item_comida_descricao"
+        app:layout_constraintStart_toEndOf="@id/item_comida_imagem"
+        tools:text="Ola meu bem" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/item_comida_descricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="16sp"
+        android:textColor="@color/colorTextSubTitle"
+
+        app:fontFamily="@font/roboto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/item_comida_imagem"
+        tools:text="Tudo bem com você" />
+
+</android.support.constraint.ConstraintLayout>
